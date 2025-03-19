@@ -304,13 +304,11 @@ with col1:
     #Conclusão
     st.write("## Conclusão do estudo")    
     st.write("""
-    O modelo apresentado na árvore de decisão busca classificar vídeos com base na presença de falas/diálogos e na exibição de textos sincronizados com o áudio. A estrutura hierárquica das decisões indica que a principal variável para classificação inicial é a existência de falas no vídeo. Caso o vídeo tenha poucas ou nenhuma fala, ele é imediatamente classificado como **sem legendas** sincronizadas (classe 0).
+    O modelo apresentou um alto desempenho, alcançando uma acurácia de 98%, demonstrando sua capacidade eficiente de classificar vídeos com base na presença e sincronização das legendas. Esse resultado indica que o modelo foi altamente preciso na diferenciação entre vídeos com e sem legendas corretamente sincronizadas.
 
-    Se o vídeo contém falas, o próximo critério analisado é se o texto aparece de forma sincronizada com a fala. Caso o texto não seja sincronizado, o vídeo também é classificado como **sem legendas** sincronizadas (classe 0).
+    A principal característica que influenciou a decisão do modelo foi a presença de falas ou diálogos no vídeo. Esse foi o critério inicial mais relevante para determinar a classificação. Caso o vídeo tivesse poucas ou nenhuma fala, ele era diretamente classificado como sem legendas sincronizadas.
 
-    Por outro lado, se o texto for exibido de forma sincronizada com a fala, a decisão final depende de um terceiro critério: se o texto transcreve exatamente o que está sendo dito. Se a transcrição for exata, o vídeo é classificado como **com legendas** sincronizadas (classe 1). Se não houver essa transcrição exata, ele é classificado como **sem legendas** sincronizadas (classe 0).
-    
-    Essa abordagem permite uma classificação estruturada e lógica, garantindo que apenas vídeos com legendas corretamente sincronizadas e fiéis ao áudio sejam reconhecidos como tal.
+    Outro fator essencial para a decisão foi a sincronização do texto com a fala. Se o texto não aparecesse de forma sincronizada, o modelo classificava o vídeo como sem legendas. No entanto, se o texto estivesse alinhado com o áudio, a decisão final dependia da exatidão da transcrição. Com essa abordagem estruturada, o modelo demonstrou uma alta capacidade de tomada de decisão baseada em critérios bem definidos, garantindo uma classificação robusta e confiável dos vídeos.
     """)
 
 with col2:
