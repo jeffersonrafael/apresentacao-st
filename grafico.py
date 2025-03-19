@@ -314,6 +314,5 @@ with col1:
 with col2:
     st.write("## Problemas encontrados")  
     st.write("""
-    Os problemas encontrados na base de dados:
-    - A base de dados possui uma amostra pequena, o que pode limitar a capacidade de generalização do modelo e aumentar o risco de overfitting, sendo recomendável a aquisição de mais dados para aprimorar a precisão e a confiabilidade dos resultados. 
+        A base de dados possui uma amostra pequena, o que pode limitar a capacidade de generalização do modelo e aumentar o risco de overfitting, sendo recomendável a aquisição de mais dados para aprimorar a precisão e a confiabilidade dos resultados. 
     """)
