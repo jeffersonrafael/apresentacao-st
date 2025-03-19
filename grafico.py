@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 from sklearn.metrics import confusion_matrix
 
-st.set_page_config(page_title="Análise - identificação de vídeos legendados", page_icon=":bar_chart:", layout="wide")
+st.set_page_config(page_title="Análise - identificação de legendas", page_icon=":bar_chart:", layout="wide")
 
 st.markdown(
     """
@@ -30,7 +30,7 @@ st.markdown(
 col1, col2, col3, col4 = st.columns([6, 2, 2, 2])
 
 with col1:
-    st.write("# Análise - identificação de vídeos legendados")
+    st.write("# Análise - identificação de legendas")
 
 
 with col4:
