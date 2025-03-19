@@ -306,7 +306,7 @@ with col1:
     st.write("""
     O modelo apresentou um alto desempenho, alcançando uma acurácia de 98%, demonstrando sua capacidade eficiente de classificar vídeos com base na presença e sincronização das legendas. Esse resultado indica que o modelo foi altamente preciso na diferenciação entre vídeos com e sem legendas corretamente sincronizadas.
 
-    A principal característica que influenciou a decisão do modelo foi a presença de falas ou diálogos no vídeo. Esse foi o critério inicial mais relevante para determinar a classificação. Caso o vídeo tivesse poucas ou nenhuma fala, ele era diretamente classificado como sem legendas sincronizadas.
+    A característica mais importante para a tomada de decisão foi a presença de texto na tela que transcreve exatamente o que está sendo dito. Esse critério foi determinante para classificar um vídeo como contendo legendas sincronizadas. Caso o texto exibido não correspondesse fielmente ao áudio, o vídeo era classificado como sem legendas sincronizadas, independentemente de outros fatores.
 
     Outro fator essencial para a decisão foi a sincronização do texto com a fala. Se o texto não aparecesse de forma sincronizada, o modelo classificava o vídeo como sem legendas. No entanto, se o texto estivesse alinhado com o áudio, a decisão final dependia da exatidão da transcrição. Com essa abordagem estruturada, o modelo demonstrou uma alta capacidade de tomada de decisão baseada em critérios bem definidos, garantindo uma classificação robusta e confiável dos vídeos.
     """)
